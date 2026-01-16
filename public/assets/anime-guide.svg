@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450">
+  <defs>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5dcc8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f0c9b5;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="hoodieGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5e6d3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e8d4c0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sparkles/Stars Background -->
+  <circle cx="40" cy="60" r="2" fill="#8b5cf6" opacity="0.7"/>
+  <circle cx="250" cy="80" r="1.5" fill="#ec4899" opacity="0.6"/>
+  <circle cx="270" cy="150" r="2" fill="#8b5cf6" opacity="0.5"/>
+  <circle cx="30" cy="200" r="1.5" fill="#ec4899" opacity="0.6"/>
+  <circle cx="280" cy="250" r="2" fill="#8b5cf6" opacity="0.7"/>
+  <circle cx="45" cy="350" r="1.5" fill="#ec4899" opacity="0.5"/>
+  <circle cx="260" cy="380" r="2" fill="#8b5cf6" opacity="0.6"/>
+
+  <!-- Body - Purple Outfit -->
+  <ellipse cx="150" cy="320" rx="50" ry="70" fill="#9b7ec4"/>
+  
+  <!-- Hoodie/Jacket - Light Cream Color -->
+  <path d="M 100 240 Q 100 200 150 190 Q 200 200 200 240 L 200 340 Q 150 360 100 340 Z" fill="url(#hoodieGrad)" stroke="#d4bca4" stroke-width="1.5"/>
+  
+  <!-- Hoodie Sleeves -->
+  <ellipse cx="85" cy="280" rx="25" ry="55" fill="url(#hoodieGrad)" transform="rotate(-25 85 280)"/>
+  <ellipse cx="215" cy="280" rx="25" ry="55" fill="url(#hoodieGrad)" transform="rotate(25 215 280)"/>
+
+  <!-- Inner Purple Shirt -->
+  <rect x="120" y="240" width="60" height="80" fill="#9b7ec4"/>
+  
+  <!-- Neck -->
+  <rect x="140" y="215" width="20" height="25" fill="url(#skinGrad)"/>
+  
+  <!-- Head -->
+  <circle cx="150" cy="160" r="60" fill="url(#skinGrad)"/>
+  
+  <!-- Hair - Long flowing dark blue/black -->
+  <!-- Left side hair -->
+  <path d="M 95 130 Q 75 160 70 220 Q 68 280 80 340" fill="url(#hairGrad)" stroke="url(#hairGrad)" stroke-width="2"/>
+  <path d="M 100 120 Q 80 150 75 210 Q 72 270 85 330" fill="url(#hairGrad)" stroke="url(#hairGrad)" stroke-width="2"/>
+  
+  <!-- Right side hair -->
+  <path d="M 205 130 Q 225 160 230 220 Q 232 280 220 340" fill="url(#hairGrad)" stroke="url(#hairGrad)" stroke-width="2"/>
+  <path d="M 200 120 Q 220 150 225 210 Q 228 270 215 330" fill="url(#hairGrad)" stroke="url(#hairGrad)" stroke-width="2"/>
+  
+  <!-- Top Hair -->
+  <path d="M 100 100 Q 150 75 200 100 Q 180 95 150 90 Q 120 95 100 100" fill="url(#hairGrad)"/>
+  
+  <!-- Hair Bangs -->
+  <path d="M 130 120 Q 125 100 135 90" fill="url(#hairGrad)" stroke="url(#hairGrad)" stroke-width="3"/>
+  <path d="M 150 115 Q 145 95 155 85" fill="url(#hairGrad)" stroke="url(#hairGrad)" stroke-width="3"/>
+  <path d="M 170 120 Q 175 100 165 90" fill="url(#hairGrad)" stroke="url(#hairGrad)" stroke-width="3"/>
+  
+  <!-- Eyes - Purple/Lavender -->
+  <ellipse cx="130" cy="150" rx="10" ry="14" fill="#b19cd9"/>
+  <ellipse cx="170" cy="150" rx="10" ry="14" fill="#b19cd9"/>
+  
+  <!-- Eye Pupils -->
+  <ellipse cx="130" cy="155" rx="5" ry="8" fill="#2c3e50"/>
+  <ellipse cx="170" cy="155" rx="5" ry="8" fill="#2c3e50"/>
+  
+  <!-- Eye Shine/Highlights -->
+  <circle cx="132" cy="150" r="3" fill="white"/>
+  <circle cx="172" cy="150" r="3" fill="white"/>
+  
+  <!-- Eyebrows -->
+  <path d="M 120 135 Q 130 132 140 135" stroke="#2c3e50" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M 160 135 Q 170 132 180 135" stroke="#2c3e50" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Nose -->
+  <line x1="150" y1="155" x2="150" y2="170" stroke="url(#skinGrad)" stroke-width="1"/>
+  
+  <!-- Mouth -->
+  <path d="M 140 180 Q 150 185 160 180" stroke="#d47a7a" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Blush -->
+  <ellipse cx="110" cy="170" rx="14" ry="10" fill="#ec4899" opacity="0.5"/>
+  <ellipse cx="190" cy="170" rx="14" ry="10" fill="#ec4899" opacity="0.5"/>
+  
+  <!-- Right Arm - Pointing -->
+  <ellipse cx="210" cy="290" rx="16" ry="50" fill="url(#skinGrad)" transform="rotate(30 210 290)"/>
+  
+  <!-- Right Hand -->
+  <circle cx="245" cy="230" r="14" fill="url(#skinGrad)"/>
+  
+  <!-- Pointing Finger -->
+  <rect x="248" y="220" width="8" height="35" rx="4" fill="url(#skinGrad)"/>
+  <circle cx="252" cy="218" r="6" fill="url(#skinGrad)"/>
+  
+  <!-- Glow around pointing hand -->
+  <circle cx="252" cy="215" r="18" fill="none" stroke="#8b5cf6" stroke-width="1.5" opacity="0.6"/>
+  <circle cx="252" cy="215" r="24" fill="none" stroke="#ec4899" stroke-width="1" opacity="0.4"/>
+  
+  <!-- Left Arm -->
+  <ellipse cx="90" cy="290" rx="16" ry="50" fill="url(#skinGrad)" transform="rotate(-30 90 290)"/>
+  
+  <!-- Left Hand -->
+  <circle cx="55" cy="230" r="14" fill="url(#skinGrad)"/>
+</svg>
