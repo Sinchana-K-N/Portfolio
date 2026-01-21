@@ -1,5 +1,5 @@
 import { Box, Typography, Button, Stack } from "@mui/material";
-import profile from "../assets/profile.jpg";
+import profile from "../assets/Profile.jpg";
 
 export default function Hero() {
   return (
