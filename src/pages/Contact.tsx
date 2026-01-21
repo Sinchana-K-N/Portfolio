@@ -1,4 +1,4 @@
-import { Box, Typography, Button, Stack, Link } from "@mui/material";
+import { Box, Typography, Stack, Link } from "@mui/material";
 import { motion } from "framer-motion";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
