@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="gradientS" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#7c6cff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="200" height="200" fill="#0a0a0f"/>
+  
+  <!-- Outer glow circle -->
+  <circle cx="100" cy="100" r="98" fill="none" stroke="url(#gradientS)" stroke-width="2" opacity="0.4"/>
+  
+  <!-- Main S letter with better path -->
+  <text x="100" y="145" font-family="Arial, sans-serif" font-size="120" font-weight="bold" text-anchor="middle" fill="url(#gradientS)" filter="url(#glow)">S</text>
+  
+  <!-- Accent circle -->
+  <circle cx="100" cy="100" r="95" fill="none" stroke="url(#gradientS)" stroke-width="1" opacity="0.2"/>
+</svg>

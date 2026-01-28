@@ -36,13 +36,14 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <Container sx={{ py: 10 }}>
+    <Container sx={{ py: { xs: 6, md: 10 }, px: { xs: 2, sm: 2 } }}>
       <Typography
         variant="h4"
         fontWeight={700}
         color="primary"
         textAlign="center"
         mb={6}
+        sx={{ fontSize: { xs: "1.5rem", sm: "2rem", md: "2.125rem" } }}
       >
         Experience
       </Typography>
@@ -50,7 +51,7 @@ export default function Experience() {
       <Box
         sx={{
           position: "relative",
-          pl: 4,
+          pl: { xs: 2, md: 4 },
           borderLeft: "2px solid rgba(124,108,255,0.4)",
         }}
       >

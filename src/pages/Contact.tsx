@@ -21,24 +21,36 @@ export default function Contact() {
   ];
 
   return (
-    <Box sx={{ py: 12, textAlign: "center" }}>
+    <Box sx={{ py: { xs: 8, md: 12 }, px: { xs: 2, sm: 4 }, textAlign: "center" }}>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        <Typography variant="h4" fontWeight={700} mb={2}>
+        <Typography 
+          variant="h4" 
+          fontWeight={700} 
+          mb={2}
+          sx={{ fontSize: { xs: "1.5rem", sm: "2rem", md: "2.125rem" } }}
+        >
           Get In Touch
         </Typography>
-        <Typography variant="body1" color="textSecondary" mb={8} maxWidth={600} mx="auto">
+        <Typography 
+          variant="body1" 
+          color="textSecondary" 
+          mb={8} 
+          maxWidth={600} 
+          mx="auto"
+          sx={{ fontSize: { xs: "0.9rem", sm: "1rem" }, px: { xs: 1, sm: 0 } }}
+        >
           Feel free to reach out to me through any of these platforms. I'd love to hear from you!
         </Typography>
       </motion.div>
 
       <Stack
         direction={{ xs: "column", md: "row" }}
-        spacing={6}
+        spacing={{ xs: 4, md: 6 }}
         justifyContent="center"
         alignItems="center"
         sx={{ mb: 6 }}

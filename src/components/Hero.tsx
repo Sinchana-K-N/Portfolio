@@ -5,28 +5,41 @@ export default function Hero() {
   return (
     <Box
       sx={{
-        minHeight: "90vh",
+        minHeight: { xs: "auto", md: "90vh" },
         display: "grid",
         gridTemplateColumns: { xs: "1fr", md: "1fr 1fr" },
         alignItems: "center",
-        px: 8,
+        px: { xs: 2, sm: 4, md: 8 },
+        py: { xs: 4, md: 0 },
+        gap: { xs: 3, md: 0 },
       }}
     >
       {/* LEFT CONTENT */}
       <Stack spacing={3}>
-        <Typography variant="h3" fontWeight={800}>
+        <Typography 
+          variant="h3" 
+          fontWeight={800}
+          sx={{ fontSize: { xs: "1.8rem", sm: "2.5rem", md: "3.5rem" } }}
+        >
           Full Stack Developer
         </Typography>
-        <Typography variant="h5" color="primary">
+        <Typography 
+          variant="h5" 
+          color="primary"
+          sx={{ fontSize: { xs: "1.1rem", sm: "1.3rem", md: "1.5rem" } }}
+        >
           React & React Native Specialist
         </Typography>
-        <Typography color="gray">
+        <Typography 
+          color="gray"
+          sx={{ fontSize: { xs: "0.9rem", sm: "1rem" }, lineHeight: 1.6 }}
+        >
           Building real-time, scalable applications used by 6,000+ users.
           Strong expertise in React, React Native, Redux, and Spring Boot.
         </Typography>
-        <Stack direction="row" spacing={2}>
-          <Button variant="contained" href="#projects" sx={{ textDecoration: "none" }}>View Projects</Button>
-          <Button variant="outlined" href="#contact" sx={{ textDecoration: "none" }}>Contact Me</Button>
+        <Stack direction={{ xs: "column", sm: "row" }} spacing={2}>
+          <Button variant="contained" href="#projects" sx={{ textDecoration: "none", width: { xs: "100%", sm: "auto" } }}>View Projects</Button>
+          <Button variant="outlined" href="#contact" sx={{ textDecoration: "none", width: { xs: "100%", sm: "auto" } }}>Contact Me</Button>
         </Stack>
       </Stack>
 
@@ -34,8 +47,8 @@ export default function Hero() {
       <Box
         sx={{
           position: "relative",
-          width: 400,
-          height: 400,
+          width: { xs: 200, sm: 280, md: 400 },
+          height: { xs: 200, sm: 280, md: 400 },
           mx: "auto",
         }}
       >

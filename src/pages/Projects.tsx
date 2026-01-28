@@ -39,6 +39,7 @@ const projects = [
       "Jenkins",
     ],
     image: hpeSupportApp, // App Store screenshot
+    appStoreLink: "https://apps.apple.com/us/app/hpe-support-case-visibility/id6736603845", // Update with actual link
   },
   {
     title: "Trail – Asset Management System",
@@ -55,7 +56,7 @@ const projects = [
     image: "/assets/trail-dashboard.svg", // Dashboard / web mockup
   },
   {
-    title: "HPE Leader’s App",
+    title: "HPE Ops App",
     type: "Mobile Application",
     description:
       "A mobile application delivering business-critical metrics through interactive visualizations and global mapping for enterprise leadership teams.",
@@ -67,18 +68,20 @@ const projects = [
     ],
     techStack: ["React Native", "Data Visualization"],
     image: hpeLeadersApp,
+    appStoreLink: "https://apps.apple.com/us/app/hpe-ops-view/id6462699142", // Update with actual link
   },
 ];
 
 export default function Projects() {
   return (
-    <Container sx={{ py: 10 }}>
+    <Container sx={{ py: { xs: 6, md: 10 }, px: { xs: 2, sm: 2 } }}>
       <Typography
         variant="h4"
         fontWeight={700}
         color="primary"
         textAlign="center"
         mb={8}
+        sx={{ fontSize: { xs: "1.5rem", sm: "2rem", md: "2.125rem" } }}
       >
         Projects
       </Typography>
@@ -89,10 +92,10 @@ export default function Projects() {
         return (
           <Grid
             container
-            spacing={6}
+            spacing={{ xs: 3, md: 6 }}
             alignItems="center"
             key={project.title}
-            sx={{ mb: 10 }}
+            sx={{ mb: { xs: 6, md: 10 } }}
           >
             {/* Image Section */}
             <Grid size={{ xs: 12, md: 6 }} order={isImageLeft ? 1 : 2}>
@@ -161,9 +164,15 @@ export default function Projects() {
                   ))}
                 </Box>
 
-                <Button variant="contained" color="primary">
-                  View Project
-                </Button>
+                {project.appStoreLink && (
+                  <Button 
+                    variant="contained" 
+                    color="primary"
+                    onClick={() => window.open(project.appStoreLink, "_blank")}
+                  >
+                    View Project
+                  </Button>
+                )}
               </motion.div>
             </Grid>
           </Grid>
